@@ -1,0 +1,674 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    /* box-sizing: border-box; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+.navbar {
+    background: url(../images/banner-bg.png)no-repeat center top;
+    background-size: 100%;
+    padding: 0% 3% 0 2%;
+}
+
+.navbar .nav {
+    /* background-color: aquamarine; */
+    padding: 1% 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* start of menu toggle */
+.navbar .nav .toggle {
+    width: 50px;
+    height: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.navbar .nav .toggle span {
+    background-color: #fff;
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+
+.navbar .nav .toggle.active span:nth-child(3) {
+    transform: translatex(60px);
+}
+
+
+.navbar .nav .toggle span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 25px;
+    left: 8px;
+}
+
+.navbar .nav .toggle.active span:nth-child(1) {
+    transform: translateY(0px) rotate(45deg);
+    width: 30px;
+    left: 10px;
+}
+
+
+.navbar .nav .toggle span:nth-child(2) {
+    transform: translateY(10px);
+    width: 15px;
+    left: 8px;
+}
+
+.navbar .nav .toggle.active span:nth-child(2) {
+    transform: translateY(0px) rotate(315deg);
+    width: 30px;
+    left: 10px;
+}
+
+
+
+
+
+
+
+/* start of menu*/
+.navbar #divMenu{
+    height: 0vh;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.navbar #divMenu.close{
+    height: 32vh;
+    transition: 0.5s;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+
+.navbar ul li {
+    padding: 8px 0 0 0;
+}
+
+.navbar ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+
+.navbar ul input {
+    margin: 8px 0;
+    background-color: transparent;
+    border: 0px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    z-index: 5;
+}
+
+.navbar ul input::placeholder {
+    color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+/* start of heager */
+/*  
+
+
+/* start of head1 */
+.header .head1 {
+    width: 80%;
+    margin: 10vh auto;
+    text-align: center;
+}
+
+.header .head1 .title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header .head1 .title img {
+    margin-right: 10px;
+    width: 3%;
+}
+
+
+.header .head1 p {
+    font-weight: bold;
+}
+
+
+
+
+
+/* start of head2 */
+.header .div_head {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2%;
+}
+
+.header .div_head .head2 .div_head2 img {
+    width: 100%;
+}
+
+
+.header .div_head .head2 .div_head2 .data {
+    text-align: center;
+    position: relative;
+    top: -28vh;
+}
+
+.header .div_head .head2 .div_head2 .data .numper {
+    background-color: black;
+    border: 2px solid brown;
+    border-radius: 50%;
+    width: 11%;
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px;
+}
+
+.header .div_head .head2 .div_head2 .data h3 {
+    font-weight: bolder;
+    margin: 10px;
+    color: #fff;
+}
+
+.header .div_head .head2 .div_head2 .data .p {
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    color: #fff;
+}
+
+
+.header .div_head .head2 .head3_img img {
+    height: 53vh;
+}
+
+.header .div_head .head2 .head4_img img {
+    height: 47vh;
+}
+
+.header .div_head .head2 .div_ptn {
+    margin-top: -100px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+.header .div_head .head2 .div_ptn a {
+    background-color: black;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 2px solid brown;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.header .div_head .head2 .div_ptn a:hover {
+    background-color: brown;
+}
+
+.header .div_head .head2 .div_ptn .brown {
+    background-color: brown;
+}
+
+
+
+
+
+
+
+
+
+
+/* start of casino */
+.casino {
+    background-color: rgba(0, 0, 0, 0.911);
+    padding: 5vh 0 1vh;
+}
+
+.casino .head_casino {
+    color: #fff;
+    width: 80%;
+    margin: 5vh auto;
+    text-align: center;
+}
+
+.casino .head_casino .title_casino {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.casino .head_casino .title_casino img {
+    margin-right: 10px;
+    width: 3%;
+}
+
+.casino .head_casino p {
+    font-weight: bold;
+    color: rgb(179, 176, 176);
+}
+
+
+
+
+
+/* start of casino_4_div */
+.casino .casino_4_div {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+}
+
+.casino .casino_4_div .div_bottom {
+    text-align: center;
+
+}
+
+.casino .casino_4_div .div_bottom .div_img img {
+    width: 15%;
+    margin: 50px;
+}
+
+.casino .casino_4_div .div_bottom .div_img {
+    border: 1px solid rgba(255, 255, 255, 0.767);
+    border-radius: 10px;
+
+}
+
+.casino .casino_4_div .div_bottom h4 {
+    font-weight: bolder;
+    margin: 20px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.casino .ptn_bottom {
+    margin: 5vh auto 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+.casino .ptn_bottom a {
+    text-align: center;
+    background-color: transparent;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: 2px solid brown;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.casino .ptn_bottom a:hover {
+    background-color: brown;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+/* satrt of footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.842);
+    margin-top: 10vh;
+    padding: 10vh 0 0;
+}
+
+footer form {
+    width: 50%;
+    margin: auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.466);
+}
+
+footer form input {
+    width: 82%;
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    background-color: transparent;
+    color: #fff;
+}
+
+footer form input::placeholder {
+    color: rgba(255, 255, 255, 0.685);
+}
+
+footer form button {
+    padding: 10px 0 10px 6px;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: transparent;
+    color: #fff;
+    border: 0;
+}
+
+footer .icon {
+    text-align: center;
+    margin: 8vh 0 5vh;
+}
+
+footer .address {
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10%;
+}
+
+footer .address div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+footer .address div img {
+    margin-right: 20px;
+}
+
+
+
+
+/* start of footer_end */
+footer .footer_end {
+    margin-top: 15vh;
+    position: relative;
+}
+
+footer .footer_end span {
+    background-color: rgba(255, 255, 255, 0.575);
+    position: absolute;
+    width: 15%;
+    left: 50%;
+    top: -10px;
+    height: 1px;
+    transform: translate(-50%, -50%);
+}
+
+footer .footer_end p {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(180, 180, 180);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of responsiv max-width: 480px */
+@media (max-width: 480px) {
+
+    .navbar .nav {
+        padding: 0.3% 0;
+    }
+
+
+    /* start of menu toggle */
+    .navbar .nav .toggle {
+        width: 40px;
+        height: 25px;
+    }
+
+    .navbar .nav .toggle span {
+        position: absolute;
+        width: 30px;
+        height: 2px;
+    }
+
+    .navbar .nav .toggle span:nth-child(1) {
+        transform: translateY(-7px);
+        width: 20px;
+        left: 5px;
+    }
+
+    .navbar .nav .toggle.active span:nth-child(1) {
+        width: 25px;
+        left: 8px;
+    }
+
+
+    .navbar .nav .toggle span:nth-child(2) {
+        transform: translateY(7px);
+        width: 10px;
+        left: 5px;
+    }
+
+    .navbar .nav .toggle.active span:nth-child(2) {
+        width: 25px;
+        left: 8px;
+    }
+
+
+
+
+    /* start of menu*/
+    .navbar ul li {
+        padding: 0px 0;
+    }
+
+    .navbar ul li a {
+        font-size: 8px;
+    }
+
+
+    .navbar ul input {
+        margin: 0 0 20px 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+/* start of head1 */
+    .header .head1 {
+        width: 80%;
+    }
+    
+    .header .head1 .title img {
+        width: 10%;
+    }
+    
+    .header .head1 p {
+        line-height: 25px;
+    }
+    
+
+
+
+
+
+
+
+/* start of head2 */
+.header .div_head {
+    width: 80%;
+    /* display: grid; */
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0%;
+}
+
+
+.header .div_head .head2 .div_head2 .data {
+    top: -38vh;
+}
+
+.header .div_head .head2 .div_head2 .data_480{
+    top: -30vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start of casino */
+.casino .head_casino .title_casino img {
+    width: 10%;
+}
+
+
+
+
+/* start of casino_4_div */
+.casino .casino_4_div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0%;
+}
+
+.casino .casino_4_div .div_bottom .div_img img {
+    width: 20%;
+    margin: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* satrt of footer */
+
+footer form {
+    width: 80%;
+}
+
+footer form input {
+    width: 59%;
+}
+
+footer form button {
+    padding: 10px 1px 10px 7px;
+}
+
+footer .address {
+    width: 80%;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15%;
+}
+
+footer .address div {
+    justify-content: start;
+}
+
+
+
+
+/* start of footer_end */
+footer .footer_end span {
+    width: 40%;
+}
+
+footer .footer_end p {
+    width: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
